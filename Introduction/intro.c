@@ -186,7 +186,10 @@
 // -> char value should be enclosed in single quotes(' ')
 // 5. void -> to represent no value or no data type -> size of void is 0 bytes
 
-
+// string datatype is not present in C programming language
+// to store string values we use char array (array of characters) -> we create string using char array
+// ex : char str[20] = "Hello World";
+// use double quotes(" ") to store string values in char array
 
 // 2. Derived Data Type : this datatype is derived from primary data type
 
@@ -290,4 +293,66 @@
 //     // printf("%d",age);
 //     printf("Your age is : %d\n",age);
 //     printf("Your salary is : %0.2f",salary);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age; // variable declaration
+
+// //    int age = 20; // Error : we can not redeclare the same variable in the same scope
+
+//     age = 24; // variable initialization
+//     printf("Your age is : %d\n",age);
+//     age = 26; // variable re-initialization
+
+//     // Note : we can initialized any variable multiple times in the same scope but we can not redeclare the same variable in the same scope 
+
+//     printf("Your age is : %d",age);
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age = 25; 
+
+//     printf("Your age is : %d\n",age);
+
+//     float price = 99.99;
+//     printf("Your price is : %0.2f\n",price);
+
+//     double cgpa = 3.75f;
+//     printf("Your CGPA is : %0.2lf\n",cgpa);
+
+//     char grade = 'A';
+//     printf("Your grade is : %c\n",grade);
+
+//     char name[] = "Pawan\0Maurya";
+
+//     // null character (\0) -> to indicate the end of the string in char array
+
+//     printf("Your name is : %s\n",name);
+
+// }
+
+// Scanf() function -> to read input from the user
+// syntax : scanf("format specifier", &variable_name);
+// & -> address of operator -> used to get the address of a variable
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int age;
+//     printf("Enter Your age : ");
+//     scanf("%d",&age);
+
+//     printf("Your age is : %d",age);
+
+//     // Note : while using scanf() function always use & (address of operator) before the variable name .
 // }
