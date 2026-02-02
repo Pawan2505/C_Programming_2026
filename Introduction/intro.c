@@ -356,3 +356,253 @@
 
 //     // Note : while using scanf() function always use & (address of operator) before the variable name .
 // }
+
+
+//  Constant
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     // int age; // variable declaration
+
+//     int age = 22; // variable declaration and initialization
+
+//     printf("Your age : %d\n",age);
+
+//     float price = 99.99;
+
+//     printf("\nPrice : %0.2f\n",price);
+
+//     char grade = 'A';
+
+//     printf("\nGrade : %c\n",grade);
+
+//     char username[] = "Pawan Maurya";
+
+//     printf("\nUsername : %s\n",username);
+
+//     double cgpa = 3.75;
+
+//     printf("\nCGPA : %0.2lf\n",cgpa);
+
+
+// }
+
+
+// Note : in c programming string datatype value is stored in double quotes(" ") and char datatype value is stored in single quotes(' ')
+
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+    
+//     // int age = 22; // variable declaration and initialization
+
+//     int age; // variable declaration
+
+//     printf("\nPlease enter your age : ");
+
+//     scanf("%d",&age);
+
+//     printf("Your age : %d\n",age);
+
+
+
+//     float price;
+
+//     printf("\nPlease enter the price : ");
+
+//     scanf("%f",&price);
+
+//     printf("\nPrice : %0.2f\n",price);
+
+
+
+
+//     char grade;
+
+//     printf("\nPlease enter your grade : ");
+
+//     scanf(" %c",&grade);
+
+//     printf("\nGrade : %c\n",grade);
+
+
+
+
+//     char username[100]; // Assuming maximum 100 characters for username
+
+//     printf("\nPlease enter your username : ");
+
+//     scanf("%[^\n]",username);
+
+//     printf("\nUsername : %s\n",username);
+
+
+
+
+//     double cgpa;
+
+//     printf("\nPlease enter your CGPA : ");
+
+//     scanf("%lf",&cgpa);
+
+//     printf("\nCGPA : %0.2lf\n",cgpa);
+
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int age = 29; // global variable declaration
+
+// int main(){
+//     int age; // local variable declaration
+
+//     // int age = 22; // Error : we can not redeclare the same variable in the same scope
+
+//     // any variable can be declared only once in the same scope
+
+//     age = 24; // local variable initialization
+
+//     printf("Local Age : %d\n",age);
+
+//     // age = 30; // local variable re-initialization
+
+//     // printf("Local Age : %d\n",age);
+
+//     // printf("Global variable : %d",::age); // like cpp programming accessing global variable using scope resolution operator(::) we can not access global variable using scope resolution operator(::) in c programming language
+// }
+
+// // Note : global variable can we accessed in local scope directly when local variable with same name is not present in the local scope
+// // if local variable with same name is present in the local scope then local variable will take precedence
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char username[] = "Pawan Maurya";
+
+//     printf("%s",username);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char username[100];
+
+//     printf("Enter username : ");
+//     scanf("%[^\n]",&username);
+
+//     printf("%s",username);
+// }
+
+
+
+// constant : 
+
+// 1. MICRO constant -> defined using #define preprocessor directive
+
+// Ex : #define PI 3.14159
+
+// 2. constant variable -> defined using const keyword
+
+// Ex : const int MAX_SIZE = 100;
+
+
+// Note : 
+// const variable must be initialized at the time of declaration
+// const variable is read-only variable
+// const variable alwasy in capital letters by convention but it is not mandatory
+
+// during micro constant definition we do not use semicolon(;) at the end of the line
+// but while defining constant variable using const keyword we use semicolon(;) at the end of the line as we use in normal variable declaration
+// in micro no datatype is specified but in constant variable datatype must be specified like normal variable declaration
+// in micro constant no assigning value is done using equal to(=) operator but in constant variable assigning value is done using equal to(=) operator like normal variable declaration and initialization
+
+
+
+// #include<stdio.h>
+// #define x 15
+// #define y 12
+
+// int main(){
+
+
+//     printf("Sum (x) :%d  and (y) :%d : %d",x,y,( x + y));
+// }
+
+// Method 1 : micro constant using #define preprocessor directive
+
+// #include<stdio.h>
+// #define x 15   // Note : it is global constant definition, so we can use it anywhere in the program
+// #define y 12  // Note : it always define in global scope not in local scope
+
+// int main(){
+
+//     // x = 122; // Note : We can not change the value of micro constant value once it is defined because it is read-only value
+
+//     printf("Sum (x) :%d  and (y) :%d : %d",x,y,( x + y));
+// }
+
+
+// Method 2 : constant variable using const keyword
+
+
+// #include<stdio.h>
+
+// int main(){
+//    const int GRID = 9898;
+
+//     // GRID = 6798; //Error :  assignment of read-only variable 'GRID'
+//     printf("Your GRID : %d",GRID);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//    const int GRID; //  Note : You need to declared and assign value is same. You can not assign Const variable is next - line
+
+// //    GRID = 3456; // Error :   assignment of read-only variable 'GRID'
+
+//     printf("Your GRID : %d",GRID);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//    const int GRID = 23456; //  Note : You need to declared and assign value is same. You can not assign Const variable is next - line
+
+// //    GRID = 3456; // Error :   assignment of read-only variable 'GRID'
+
+//     printf("Your GRID : %d",GRID);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//    const int GRID;
+
+//    printf("Enter Your GRID : ");
+
+//    scanf("%d",&GRID);  // Note : Only in case of user input of const variable we can assign value using scanf function in next - line
+
+//    printf("Your GRID : %d",GRID);
+// }
+
+
+// Operator & Expression : 
+
