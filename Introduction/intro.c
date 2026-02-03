@@ -606,3 +606,76 @@
 
 // Operator & Expression : 
 
+
+// 1. Uniary Operator -> operator(symbols) that works on a single operand(variable or constant)
+
+// 1. ++ : increment operator -> increases the value of operand by 1
+
+// post increment : num++ -> first use the value of operand then increase it by 1
+// pre increment : ++num -> first increase the value of operand by 1 then use it
+
+// 2. -- : decrement operator -> decreases the value of operand by 1
+// post decrement : num-- -> first use the value of operand then decrease it by 1
+// pre decrement : --num -> first decrease the value of operand by 1 then use it
+
+// #include<stdio.h>
+
+// int main(){
+//     int num = 10;
+//     printf("The value of num : %d\n",num++); // 10
+//     printf("The value of num : %d\n",num++); // 11
+//     printf("The value of num : %d\n",++num); // 13
+// }
+
+
+// Arithmetic Operator -> operators(symbols) that are used to perform mathematical operations on operands(variables or constants)
+// 1. + : addition operator -> adds two operands
+// 2. - : subtraction operator -> subtracts second operand from first operand
+// 3. * : multiplication operator -> multiplies two operands
+// 4. / : division operator -> divides first operand by second operand
+// 5. % : modulus operator -> returns the remainder of division of first operand by second operand (only works with integer operands)
+
+// #include<stdio.h>
+// int main(){
+//     int a = 20;
+//     int b = 4;
+
+//     printf("Addition : %d\n",a + b); // 24
+//     printf("Subtraction : %d\n",a - b); // 16
+//     printf("Multiplication : %d\n",a * b); // 80
+//     printf("Division : %d\n",a / b); // 5
+//     printf("Modulus : %d\n",a % b); // 0
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int a = 20;
+//     int b = 40;
+
+//     printf("Modulus : %d\n",a % b); //Note : when first value is smaller than second value then modulus operator(%) will return the value of first value itself 
+// }
+
+
+// Relational Operator -> operators(symbols) that are used to compare two operands(variables or constants) and return a boolean value (true or false)
+// 1. == : equal to operator -> returns true if both operands are equal
+// 2. != : not equal to operator -> returns true if both operands are not equal
+// 3. > : greater than operator -> returns true if first operand is greater than second operand
+// 4. < : less than operator -> returns true if first operand is less than second
+// 5. >= : greater than or equal to operator -> returns true if first operand is greater than or equal to second operand
+// 6. <= : less than or equal to operator -> returns true if first operand is less than or equal to second operand
+// Note : in c programming true is represented by 1 and false is represented by 0
+
+
+#include<stdio.h>
+int main(){
+    int a = 22;
+    int b = 40;
+
+    printf("Equal to : %d\n",a == b); //
+    printf("Not Equal to : %d\n",a != b); //
+    printf("Greater than : %d\n",a > b); // 
+    printf("Less than : %d\n",a < b); // 
+    printf("Greater than or Equal to : %d\n",a >= b); // 
+    printf("Less than or Equal to : %d\n",a <= b); // 
+}
