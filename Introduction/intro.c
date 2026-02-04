@@ -667,15 +667,15 @@
 // Note : in c programming true is represented by 1 and false is represented by 0
 
 
-#include<stdio.h>
-int main(){
-    int a = 22;
-    int b = 40;
+// #include<stdio.h>
+// int main(){
+//     int a = 22;
+//     int b = 40;
 
-    printf("Equal to : %d\n",a == b); //
-    printf("Not Equal to : %d\n",a != b); //
-    printf("Greater than : %d\n",a > b); // 
-    printf("Less than : %d\n",a < b); // 
-    printf("Greater than or Equal to : %d\n",a >= b); // 
-    printf("Less than or Equal to : %d\n",a <= b); // 
-}
+//     printf("Equal to : %d\n",a == b); //
+//     printf("Not Equal to : %d\n",a != b); //
+//     printf("Greater than : %d\n",a > b); // 
+//     printf("Less than : %d\n",a < b); // 
+//     printf("Greater than or Equal to : %d\n",a >= b); // 
+//     printf("Less than or Equal to : %d\n",a <= b); // 
+// }
