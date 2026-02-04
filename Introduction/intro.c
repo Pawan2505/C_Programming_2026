@@ -679,3 +679,124 @@
 //     printf("Greater than or Equal to : %d\n",a >= b); // 
 //     printf("Less than or Equal to : %d\n",a <= b); // 
 // }
+
+
+// Logical Operator -> operators(symbols) that are used to combine multiple relational expressions and return a boolean value (1 or 0)
+// 1. && : logical AND operator -> returns true if both operands are true
+// 2. || : logical OR operator -> returns true if at least one operand is true
+// 3. ! : logical NOT operator -> returns true if operand is false and false if operand is true
+
+// true -> 1
+// false -> 0
+// 1. logical AND operator
+
+// true && true -> true
+// false && true -> false
+// true && false -> false
+
+
+// 2. logical OR operator
+
+// false || true -> true
+// true || false -> true
+// false || false -> false
+
+
+// 3. logical NOT operator 
+
+//  !false -> true
+//  !true -> false
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int brother_age = 20;
+//     int sister_age = 10;
+
+//     printf("%d\n", (brother_age == sister_age) && (brother_age >= sister_age));
+//     printf("%d\n", (brother_age < sister_age) && (brother_age >= sister_age));
+//     printf("%d\n", (brother_age > sister_age) && (brother_age >= sister_age));
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int brother_age = 20;
+//     int sister_age = 10;
+
+//     printf("%d\n", (brother_age == sister_age) || (brother_age <= sister_age));
+//     printf("%d\n", (brother_age < sister_age) || (brother_age >= sister_age));
+//     printf("%d\n", (brother_age > sister_age) || (brother_age >= sister_age));
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int brother_age = 20;
+//     int sister_age = 10;
+
+//     printf("%d\n", !((brother_age == sister_age) || (brother_age <= sister_age)));
+//     printf("%d\n", !((brother_age < sister_age) && (brother_age >= sister_age)));
+//     printf("%d\n", !((brother_age > sister_age) || (brother_age >= sister_age)));
+// }
+
+
+// Assignment Operator -> operators(symbols) that are used to assign values to variables
+// 1.   simple assignment operator -> assigns the value of right operand to left operand
+// 2. += : addition assignment operator -> adds the value of right operand to left operand and assigns the result to left operand
+// 3. -= : subtraction assignment operator -> subtracts the value of right operand from left operand and assigns the result to left operand
+// 4. *= : multiplication assignment operator -> multiplies the value of right operand with left operand and assigns the result to left operand
+// 5. /= : division assignment operator -> divides the value of left operand by right operand and assigns the result to left operand
+// 6. %= : modulus assignment operator -> calculates the modulus of left operand by right operand and assigns the result to left operand
+
+
+// int age = 22;
+
+
+// #include<stdio.h>
+// int main(){
+    
+//     float price = 99;
+
+//     printf("Your price : %0.2f\n",price);
+// }
+
+// Note : float type variable can store both integer and decimal values
+
+// #include<stdio.h>
+// int main(){
+    
+//     float price = 99;
+
+//     // price = price + 100.5;
+
+//     price += 100.5;
+
+//     printf("Your price : %0.2f\n",price);
+// }
+
+
+// Ternary Operator -> operator(symbol) that works on three operands(variables or constants)
+
+// syntax : condition ? expression1 : expression2;
+
+// condition -> true -> expression1
+// condition -> false -> expression2
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num1 = 850;
+
+//     int num2 = 100;
+
+
+//     (num1>num2)? printf("%d is greater from %d (statement1)",num1, num2):printf("%d is greater from %d (satement2)",num2, num1);
+// }
