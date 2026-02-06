@@ -800,3 +800,95 @@
 
 //     (num1>num2)? printf("%d is greater from %d (statement1)",num1, num2):printf("%d is greater from %d (satement2)",num2, num1);
 // }
+
+
+// Type Casting -> converting one data type to another data type
+
+// 1. Implicit Type Casting -> automatic type conversion done by the compiler when we assign a value of one data type to a variable of another data type
+
+// 2. Explicit Type Casting -> manual type conversion done by the programmer using type casting operator
+
+
+// Implicit Type Casting
+// #include<stdio.h>
+
+// int main(){
+//     int shirt_price = 300;
+//     float paint_price = 1000.50;
+
+//     float total_price = shirt_price + paint_price;
+
+//     printf("Total price : %0.2f", total_price);
+// }
+
+
+// Explicit Type Casting
+
+// #include<stdio.h>
+
+// int main(){
+//     int shirt_price = 300;
+//     float paint_price = 1000.50;
+
+//     int total_price = shirt_price + (int)paint_price;
+
+//     printf("Total price : %d", total_price);
+// }
+
+
+// Control Stracture : it is used to control the flow of the program based on certain conditions or loops
+// 1. Conditional Statements -> used to execute a block of code based on certain conditions
+
+// true - > block of code executed
+// false -> block of code not executed
+
+// 1. if statement -> used to execute a block of code if a condition is true
+
+// 2. if-else statement -> used to execute a block of code if a condition is true and another block of code if the condition is false
+
+// 3. else-if statement -> used to execute a block of code if a condition is true and another block of code if the condition is false and another block of code if the condition is false and so on
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age;
+
+//     printf("Enter your age : ");
+
+//     scanf("%d",&age);
+
+//     if(age>=18){
+//         printf("You are eligible to watch movie");
+//     }else{
+//         printf("Please watch cartoon");
+//     }
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age;
+
+//     printf("Enter your age : ");
+
+//     scanf("%d",&age);
+
+
+//     if(age <= 18){
+//         printf("Intrested to watch cartoon video");
+//     }
+//     else if(age <= 30){
+//         printf("Intrested to watch science frinction and love story movie");
+//     }
+//     else if(age >30 && age <= 80){
+//          printf("Intrested in spritual movies");
+//     }else{
+//         printf("Go to hevan");
+//     }
+
+// }
