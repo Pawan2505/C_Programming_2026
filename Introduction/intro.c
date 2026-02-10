@@ -892,3 +892,83 @@
 //     }
 
 // }
+
+// &,|,^,~
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+//     int y = 5;
+
+//     printf("%d",x&y);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+//     int y = 5;
+
+//     printf("%d",x|y); // 15
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+//     int y = 5;
+
+//     printf("%d",x^y); // 15
+// }
+
+
+// 1 | 1 = 0
+// 0 | 0 = 0
+// 0 | 1 = 1
+// 1 | 0 = 1
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+
+//     printf("%d",~x); // -(n+1) => -11
+// }
+
+
+// if statement
+
+// #include<stdio.h>
+
+// int main(){
+//     int age = 20;
+
+//     if(age >= 18){
+//         printf("You are eligible to watch movie.\n");
+//     }
+
+//     if(age >= 20){
+//         printf("you can play game.");
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int age = 20;
+
+//     if(age >= 18){
+//         printf("You are eligible to watch movie.\n");
+//     }
+
+//    else if(age >= 20){
+//         printf("you can play game.");
+//     }
+
+// }
+
+
