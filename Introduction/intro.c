@@ -972,3 +972,113 @@
 // }
 
 
+// # -> preprocessor
+
+// include -> directive
+
+// #include -> preprocessor directive to include the header file in the program
+
+
+// stdio.h -> standard input output header file -> it contains the declaration of printf() and scanf() functions and other input output related functions
+
+// #include<stdio.h>
+
+// // int : return type of main function -> it indicates that main function will return an integer value to the operating system after execution
+
+// // main() -> entry point of the program -> it is the function that is called by the operating system to start the execution of the program
+
+// int main(){
+
+//     return 0; // return statement -> it is used to return a value from the function to the caller (in this case, the operating system) after the execution of the function is completed
+
+// }
+
+// main(); // Error : we can not call main() function in c programming language because it is the entry point of the program and it is called by the operating system to start the execution of the program
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int marks;
+
+//     printf("Enter your marks : ");
+
+//     scanf("%d",&marks);
+
+//     if(marks <= 100 && marks >=80){
+
+//         if(marks >=90){
+//             printf("Grade A");
+//         }else{
+//             printf("Grade B");
+//         }
+
+//     }else{
+//         if(marks>=70){
+//             printf("Grade C");
+//         }else{
+//             printf("Faield");
+//         }
+//     }
+
+    
+// }
+
+
+
+// Swich Case : 
+
+#include<stdio.h>
+
+int main(){
+
+    int num1 = 100;
+
+    int num2 = 2;
+
+    char ch;
+
+    printf("Enter operator : ");
+    scanf("%c",&ch);
+
+    int sum = 0;
+    int sub = 0;
+    int mul = 0;
+    int val = 0;
+    int rem = 0;
+    
+    switch(ch){
+        case '+':
+
+            sum = num1 + num2;
+            printf("Sum : %d", sum);
+            break;
+
+        case '-':
+            sub = num1-num2;
+            printf("Sub : %d",sub);
+            break;
+
+        case '*':
+            mul = num1*num2;
+            printf("Mul : %d",mul);
+            break;
+
+        case '/' :
+            val  = num1/num2;
+            printf("Div : %d",val);
+            break;
+
+        case '%':
+            rem = num1%num2;
+            printf("Rem : %d",rem);
+            break;
+
+        default:
+            printf("Please enter valid operator!");
+
+    }
+
+}
