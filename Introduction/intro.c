@@ -1030,55 +1030,282 @@
 
 // Swich Case : 
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
+// int main(){
 
-    int num1 = 100;
+//     int num1 = 100;
 
-    int num2 = 2;
+//     int num2 = 2;
 
-    char ch;
+//     char ch;
 
-    printf("Enter operator : ");
-    scanf("%c",&ch);
+//     printf("Enter operator : ");
+//     scanf("%c",&ch);
 
-    int sum = 0;
-    int sub = 0;
-    int mul = 0;
-    int val = 0;
-    int rem = 0;
+//     int sum = 0;
+//     int sub = 0;
+//     int mul = 0;
+//     int val = 0;
+//     int rem = 0;
     
-    switch(ch){
-        case '+':
+//     switch(ch){
+//         case '+':
 
-            sum = num1 + num2;
-            printf("Sum : %d", sum);
-            break;
+//             sum = num1 + num2;
+//             printf("Sum : %d", sum);
+//             break;
 
-        case '-':
-            sub = num1-num2;
-            printf("Sub : %d",sub);
-            break;
+//         case '-':
+//             sub = num1-num2;
+//             printf("Sub : %d",sub);
+//             break;
 
-        case '*':
-            mul = num1*num2;
-            printf("Mul : %d",mul);
-            break;
+//         case '*':
+//             mul = num1*num2;
+//             printf("Mul : %d",mul);
+//             break;
 
-        case '/' :
-            val  = num1/num2;
-            printf("Div : %d",val);
-            break;
+//         case '/' :
+//             val  = num1/num2;
+//             printf("Div : %d",val);
+//             break;
 
-        case '%':
-            rem = num1%num2;
-            printf("Rem : %d",rem);
-            break;
+//         case '%':
+//             rem = num1%num2;
+//             printf("Rem : %d",rem);
+//             break;
 
-        default:
-            printf("Please enter valid operator!");
+//         default:
+//             printf("Please enter valid operator!");
 
-    }
+//     }
 
-}
+// }
+
+
+
+// Loop : same  pattern of code is repeated multiple times itself is called loop
+
+// Types of Loop :
+
+// A. Entry control loop : 
+
+
+// 1. for loop -> used when the number of iterations is known
+            // -> range based loop -> you know the starting and ending point of the loop
+            // -> example : print numbers from 1 to 100
+            // -> it work on condition checking at the begining of the loop
+
+
+// Syntax of for loop :
+
+// for(initialization; condition; increment/decrement){
+//      // block of code to be executed
+// }
+
+// initialization : set the starting point of the loop
+// condition : set the ending point of the loop
+// increment/decrement : update the loop variable after each iteration
+
+
+// #include<stdio.h>
+// int main(){
+    
+// for(int num = 1; num <=100; num++){
+//     printf("%d ", num);
+// }
+
+// }
+
+// what is even number ? 
+// num%2 == 0 => even
+
+// #include<stdio.h>
+// int main(){
+    
+// for(int num = 1; num <=100; num++){
+//     if(num%2 == 0){
+
+//         printf("%d ", num);
+//     }
+//  }
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+    
+// for(int num = 1; num <=100; num++){
+//     if(num%2 == 0){
+
+//         printf("%d ", num);
+//     }
+// }
+
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int num;
+// for(num = 1; num <=100; num++){
+
+//     if(num%2 == 0){
+
+//         printf("%d ", num);
+//     }
+    
+// }
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int num = 1;
+// for(; num <=100; num++){
+
+//     if(num%2 == 0){
+
+//         printf("%d ", num);
+//     }
+    
+// }
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int num = 1;
+// for(; num <=100;){
+
+//     if(num%2 == 0){
+
+//         printf("%d ", num);
+//     }
+//      num++;
+// }
+
+// }
+
+
+// 2. while loop -> used when the number of iterations is not known
+//                -> no range based loop -> you don't know the starting and ending point of the loop
+//                -> it work on condition checking at the begining of the loop
+
+// Syntax of while loop :
+                        // while(condition){
+                        //      // block of code to be executed
+                        //      // increment/decrement
+                        // }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 1;
+
+//     while(num <=10){
+//         printf("%d ",num);
+//         num++;
+//     }
+// }
+
+
+// 45751/10 = 4575.1
+
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter number : ");
+//     scanf("%d",&num);
+
+//     int count = 0;
+//     while(num>0){
+//         num = num/10;
+//         count++;
+//     }
+
+//     printf("Number of digit : %d", count);
+// }
+
+
+
+// 45751 => 4+5+7+5+1 => ?
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter number : ");
+//     scanf("%d",&num);
+
+//     int sum = 0;
+//     while(num>0){
+//         int digit = num%10;
+//         sum += digit;
+//         num = num/10;
+   
+//     }
+
+//     printf("sum of digit : %d", sum);
+// }
+
+
+
+
+
+
+
+
+// A. Exist Entry control loop : 
+
+// 3. do-while loop -> used when the number of iterations is not known but we want to execute the loop at least once
+//                  -> no range based loop -> you don't know the starting and ending point of the loop
+//                  -> it work on condition checking at the end of the loop
+//                  -> block of code is executed first then condition is checked
+//                  -> same as while loop but condition is checked at the end of the loop
+// Syntax of do-while loop :
+
+                        //do{
+                        //      // block of code to be executed
+                        //      // increment/decrement
+                        // }while(condition);
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 1;
+
+//     do{
+//         printf("%d ",num);
+//         num++;
+//     }while(num<=10);
+
+// }
+
+
+// infinite loop
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 1;
+
+//     do{
+//         printf("%d ",num);
+//     }while(num<=10);
+
+// }
+        
