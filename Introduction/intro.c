@@ -1309,3 +1309,35 @@
 
 // }
         
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     for(int num = 1; num<=10; ++num){
+//         if(num==5){
+//             continue;
+//         }
+//         printf("%d ",num);
+//     }
+// }
+
+
+
+#include<stdio.h>
+
+int main(){
+    // goto
+
+    for(int num = 1; num<=10; ++num){
+        if(num==5){
+            goto hello;
+        }
+        printf("%d ",num);
+    }
+
+    hello:
+        printf("Kya baat hai goto bhai, jum kr diye");
+
+}
