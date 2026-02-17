@@ -1325,19 +1325,77 @@
 
 
 
+// #include<stdio.h>
+
+// int main(){
+//     // goto
+
+//     for(int num = 1; num<=10; ++num){
+//         if(num==5){
+//             goto hello;
+//         }
+//         printf("%d ",num);
+//     }
+
+//     hello:
+//         printf("Kya baat hai goto bhai, jum kr diye");
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     for(int row = 1; row<=4; row++){
+
+//         for(int col = 1; col<= row; col++){
+//             printf("%d ",col);
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// ASCII -> American Standard Code for Information Interchange -> it is a character encoding standard that assigns a unique numeric value to each character (letters, digits, symbols) used in computers and communication devices
+
+// ascii value of 'A' -> 65
+// ascii value of 'Z' -> 90
+
+// ascii value of 'a' -> 97
+// ascii value of 'z' -> 122
+
+// ascii value of '0' -> 48
+// ascii value of '9' -> 57
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int num = 66;
+
+//     printf("%c",num);
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+//     for(int row = 65; row<=68; row++){
+
+//         for(int col = 65; col<= row; col++){
+//             printf("%c ",col);
+//         }
+//         printf("\n");
+//     }
+// }
+
 #include<stdio.h>
-
 int main(){
-    // goto
+    for(int row = 1; row<=4; row++){
 
-    for(int num = 1; num<=10; ++num){
-        if(num==5){
-            goto hello;
+        for(int col = 1; col<= row; col++){
+            printf("* ");
         }
-        printf("%d ",num);
+        printf("\n");
     }
-
-    hello:
-        printf("Kya baat hai goto bhai, jum kr diye");
-
 }
