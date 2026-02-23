@@ -1389,13 +1389,123 @@
 //     }
 // }
 
-#include<stdio.h>
-int main(){
-    for(int row = 1; row<=4; row++){
+// #include<stdio.h>
+// int main(){
+//     for(int row = 1; row<=4; row++){
 
-        for(int col = 1; col<= row; col++){
-            printf("* ");
-        }
-        printf("\n");
-    }
+//         for(int col = 1; col<= row; col++){
+//             printf("* ");
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     for(int row = 1; row<=5; row++){
+
+//         for(int space = 5; space>row; space--){
+//             printf(" ");
+//         }
+
+//         for(int col = 1; col<= row; col++){
+//             printf("%d",col);
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     for(int row = 1; row<=5; row++){
+
+//         for(int col = 1; col<=5; col++){
+           
+//             if((row == 2 || row == 4 || row == 5) && (col == 2 || col == 3|| col==4)){
+//                 printf(" ");
+//             }else{
+//                 printf("*");
+//             }
+
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+// Array in Detail
+
+
+// Array : 
+
+// 1. with the help of array type variable we can store multiple data in single variable.
+// 2. all data will be same datatype.
+// 3. array is static in c programming . it mean we can not increase or decrease array size at run time. 
+// 4. Array size is fixed. (you should need to declare size at the declaration of array variable)
+// 5. It work on index. and startig element index is 0. and end element of index is (length - 1)
+// 6. memory allocation to array is continuous.
+// 7. memory management will be manually. If you not store data according to size like you store less data in compaire to size then memory wastage will occure.
+// 8. You can not store data more size.
+
+// Syntax :
+
+// declartion array variable
+
+// datatype variable_name[size];
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[] = {10,20,30,40,50,60};
+
+//     printf("%d ",arr[0]);
+//     printf("%d ",arr[1]);
+//     printf("%d ",arr[2]);
+//     printf("%d ",arr[3]);
+//     printf("%d ",arr[4]);
+//     printf("%d ",arr[5]);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5];
+
+//     arr[0] = 11;
+//     arr[1] = 12;
+//     arr[2] = 13;
+//     arr[3] = 14;
+//     arr[4] = 15;
+
+//     printf("%d ",arr[0]);
+//     printf("%d ",arr[1]);
+//     printf("%d ",arr[2]);
+//     printf("%d ",arr[3]);
+//     printf("%d ",arr[4]);
+   
+// }
+
+
+
+#include<stdio.h>
+
+int main(){
+
+    int arr[5] = {12,34,56,67,98};
+
+  arr[2] = 600;
+
+    printf("%d ",arr[0]);
+    printf("%d ",arr[1]);
+    printf("%d ",arr[2]);
+    printf("%d ",arr[3]);
+    printf("%d ",arr[4]);
+   
 }
