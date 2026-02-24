@@ -1494,18 +1494,119 @@
 
 
 
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5] = {12,34,56,67,98};
+
+//   arr[2] = 600;
+
+//     printf("%d ",arr[0]);
+//     printf("%d ",arr[1]);
+//     printf("%d ",arr[2]);
+//     printf("%d ",arr[3]);
+//     printf("%d ",arr[4]);
+   
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr[5] = {10,34,56,3,7};
+
+//   for(int i = 0; i<5; i++){
+//     printf("%d ",arr[i]);
+//   }
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr[5] = {10,34,56,3,7};
+//   int i = 0;
+//   while(i<5){
+//     printf("%d ",arr[i]);
+//     i++;
+//   }
+
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr[5];
+
+//   printf("Plese enter element in array!\n");
+
+//   for(int i = 0; i <5; i++){
+//     printf("Please enter element at %d index : ",i);
+//     scanf("%d",&arr[i]);
+//   }
+
+
+//   printf("Array : ");
+
+//   for(int i = 0; i < 5; i++){
+//     printf("%d ",arr[i]);
+//   }
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//   int arr[6] = {1,2,3,5,6,7};
+
+//   int sum = 0;
+
+//   for(int i = 0; i < 6; i++){
+//     sum += arr[i];
+//   }
+
+//   printf("Sum of all elemen of array : %d",sum);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//   int arr[7] = {1,2,3,5,6,7,90};
+
+//   int count = 0;
+
+//   for(int i = 0; i < 7; i++){
+//    if (arr[i]%2 == 0)
+//    {
+//     count++;
+//    }
+   
+//   }
+
+//   printf("all even element count of array : %d",count);
+// }
+
+
 #include<stdio.h>
 
 int main(){
 
-    int arr[5] = {12,34,56,67,98};
+  int arr[] = {1,2,3,5,6,7,90,4,56,67};
 
-  arr[2] = 600;
+  // printf("%d \n",sizeof(arr));
+  // printf("%d ",sizeof(arr[0]));
 
-    printf("%d ",arr[0]);
-    printf("%d ",arr[1]);
-    printf("%d ",arr[2]);
-    printf("%d ",arr[3]);
-    printf("%d ",arr[4]);
-   
+
+  int length = sizeof(arr)/sizeof(arr[0]);
+
+  // printf("Length of array : %d",length);
+
+  for(int i = 0; i <length; i++){
+    printf("%d ",arr[i]);
+  }
+
 }
